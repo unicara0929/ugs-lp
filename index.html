@@ -230,6 +230,67 @@
       color: #888;
       font-size: 12px;
     }
+
+    /* インラインCTAボタン */
+    .inline-cta {
+      display: flex;
+      justify-content: center;
+      padding: 20px 16px;
+      background: #fff;
+    }
+
+    .inline-cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 350px;
+      padding: 16px 24px;
+      background: linear-gradient(180deg, #06C755 0%, #05a347 100%);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .inline-cta-button:active {
+      transform: scale(0.98);
+    }
+
+    @media screen and (min-width: 751px) {
+      .inline-cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(6, 199, 85, 0.5);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .inline-cta-button {
+        font-size: 15px;
+        padding: 14px 20px;
+      }
+    }
+
+    /* 9.png用オーバーレイCTA */
+    .cta-overlay-section {
+      position: relative;
+    }
+
+    .cta-overlay {
+      position: absolute;
+      bottom: 18%;
+      left: 5%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta-overlay .inline-cta-button {
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -243,6 +304,11 @@
     <section class="section">
       <img src="1.png" alt="UGS FP実践コミュニティ - 勉強だけで終わらない「お金の知識×稼げる力」を身につけるビジネスコミュニティ 変わるなら、ここで。収益化達成率70%超" loading="eager">
     </section>
+
+    <!-- LINE登録ボタン1 -->
+    <div class="inline-cta">
+      <a href="#" class="inline-cta-button line-cta-link">今すぐ無料でLINE登録する</a>
+    </div>
 
     <!-- 不安訴求 -->
     <section class="section">
@@ -278,8 +344,11 @@
     </section>
 
     <!-- 11万円OFF特典 -->
-    <section class="section">
+    <section class="section cta-overlay-section">
       <img src="9.png" alt="さらに今なら！このページからLINE登録&面談参加で入会金11万円OFF" loading="lazy">
+      <div class="cta-overlay">
+        <a href="#" class="inline-cta-button line-cta-link">今すぐ無料でLINE登録する</a>
+      </div>
     </section>
 
     <!-- フッター情報 -->
@@ -306,9 +375,18 @@
     // LINE URLを設定
     const LINE_URL = 'https://s.lmes.jp/landing-qr/2008450856-kO68dB3w?uLand=mqM6f1';
 
+    // 固定フッターCTA
     document.getElementById('line-cta').addEventListener('click', function(e) {
       e.preventDefault();
       window.open(LINE_URL, '_blank');
+    });
+
+    // インラインCTAボタン
+    document.querySelectorAll('.line-cta-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open(LINE_URL, '_blank');
+      });
     });
   </script>
 </body>
