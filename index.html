@@ -193,6 +193,43 @@
         box-shadow: 0 6px 20px rgba(6, 199, 85, 0.5);
       }
     }
+
+    /* フッター情報 */
+    .footer-info {
+      background: #fff;
+      padding: 0 20px 100px;
+      text-align: center;
+    }
+
+    .footer-gradient-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #f8d7da 0%, #fce4ec 50%, #f8d7da 100%);
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 32px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: #888;
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #555;
+    }
+
+    .footer-copyright {
+      color: #888;
+      font-size: 12px;
+    }
   </style>
 </head>
 <body>
@@ -244,6 +281,18 @@
     <section class="section">
       <img src="9.png" alt="さらに今なら！このページからLINE登録&面談参加で入会金11万円OFF" loading="lazy">
     </section>
+
+    <!-- フッター情報 -->
+    <footer class="footer-info">
+      <div class="footer-gradient-bar"></div>
+      <div class="footer-links">
+        <a href="https://unicara.jp/tokushoho/ugs" target="_blank" rel="noopener">運営会社</a>
+        <a href="https://unicara.jp/policy" target="_blank" rel="noopener">プライバシーポリシー</a>
+        <a href="https://unicara.jp/agreement/ugs-tos" target="_blank" rel="noopener">UGS利用規約</a>
+        <a href="https://unicara.jp/tokushoho/ugs" target="_blank" rel="noopener">特定商取引法に基づく表示</a>
+      </div>
+      <p class="footer-copyright">&copy; Unicara inc. All Rights Reserved.</p>
+    </footer>
   </div>
 
   <!-- 固定フッターCTA -->
