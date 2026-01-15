@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>UGS | FP実践コミュニティ - お金の知識×稼げる力を身につけるビジネスコミュニティ</title>
+  <meta name="description" content="勉強だけで終わらない「お金の知識×稼げる力」を身につけるビジネスコミュニティ。収益化達成率70%超。変わるなら、ここで。">
+  <!-- OGP設定 -->
+  <meta property="og:title" content="UGS | FP実践コミュニティ">
+  <meta property="og:description" content="勉強だけで終わらない「お金の知識×稼げる力」を身につけるビジネスコミュニティ">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="FV.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      padding-bottom: 80px;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* 画像セクション共通スタイル */
+    .section {
+      width: 100%;
+      display: block;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* PC表示時は中央寄せで最大幅制限 */
+    @media screen and (min-width: 751px) {
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .lp-container {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    /* 固定フッターCTA */
+    .fixed-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, #ffffff 100%);
+      padding: 12px 16px;
+      padding-bottom: calc(12px + env(safe-area-inset-bottom));
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 350px;
+      padding: 16px 24px;
+      background: linear-gradient(180deg, #06C755 0%, #05a347 100%);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+      letter-spacing: 0.5px;
+    }
+
+    .cta-button:active {
+      transform: scale(0.98);
+    }
+
+    .cta-button svg {
+      width: 26px;
+      height: 26px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 4px 15px rgba(6, 199, 85, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 25px rgba(6, 199, 85, 0.6);
+      }
+    }
+
+    /* スマホ向け最適化 */
+    @media screen and (max-width: 480px) {
+      body {
+        padding-bottom: 75px;
+      }
+
+      .cta-button {
+        font-size: 15px;
+        padding: 14px 20px;
+        gap: 8px;
+      }
+
+      .cta-button svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .fixed-cta {
+        padding: 10px 12px;
+        padding-bottom: calc(10px + env(safe-area-inset-bottom));
+      }
+    }
+
+    /* iPhone SE等の小さい画面向け */
+    @media screen and (max-width: 375px) {
+      .cta-button {
+        font-size: 14px;
+        padding: 12px 16px;
+      }
+    }
+
+    /* PC表示時のフッター */
+    @media screen and (min-width: 751px) {
+      .fixed-cta {
+        max-width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px 20px 0 0;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(6, 199, 85, 0.5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="lp-container">
+    <!-- ファーストビュー -->
+    <section class="section fv">
+      <img src="FV.png" alt="UGS FP実践コミュニティ - 勉強だけで終わらない「お金の知識×稼げる力」を身につけるビジネスコミュニティ 変わるなら、ここで。収益化達成率70%超" loading="eager">
+    </section>
+
+    <!-- 不安訴求セクション -->
+    <section class="section">
+      <img src="3.png" alt="このまま何十年も同じ不安を抱え続けますか？" loading="lazy">
+    </section>
+
+    <!-- 代表メッセージ -->
+    <section class="section">
+      <img src="4.png" alt="代表メッセージ - 何をすればいいか分からないから、これをやれば変われるへ" loading="lazy">
+    </section>
+
+    <!-- UGSが選ばれる3つの理由 -->
+    <section class="section">
+      <img src="5.png" alt="UGSが選ばれる3つの理由" loading="lazy">
+    </section>
+
+    <!-- 他社比較 -->
+    <section class="section">
+      <img src="6.png" alt="他社と比べてわかる圧倒的な環境がここにある" loading="lazy">
+    </section>
+
+    <!-- メンバー実績 -->
+    <section class="section">
+      <img src="7.png" alt="人生を変えたメンバーがたくさん - Before After" loading="lazy">
+    </section>
+
+    <!-- お申し込みの流れ -->
+    <section class="section">
+      <img src="8.png" alt="お申し込みの流れ" loading="lazy">
+    </section>
+
+    <!-- 11万円OFF特典 -->
+    <section class="section">
+      <img src="9.png" alt="さらに今なら！このページからLINE登録&面談参加で入会金11万円OFF" loading="lazy">
+    </section>
+
+    <!-- アンケート回答特典 -->
+    <section class="section">
+      <img src="10.png" alt="アンケート回答で最大20万円相当の実践ガイドもらえる" loading="lazy">
+    </section>
+
+    <!-- 7大特典プレゼント -->
+    <section class="section">
+      <img src="11.png" alt="今なら無料面談参加で7大特典プレゼント" loading="lazy">
+    </section>
+
+    <!-- 最終訴求 -->
+    <section class="section">
+      <img src="12.png" alt="UGSに参加するなら今がチャンス" loading="lazy">
+    </section>
+
+    <!-- 代表メッセージ動画 -->
+    <section class="section">
+      <img src="13.png" alt="代表メッセージ動画" loading="lazy">
+    </section>
+  </div>
+
+  <!-- 固定フッターCTA -->
+  <div class="fixed-cta">
+    <a href="#" class="cta-button" id="line-cta">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+      </svg>
+      今すぐ無料でLINE登録する
+    </a>
+  </div>
+
+  <script>
+    // LINE URLを設定（ここを実際のURLに変更してください）
+    const LINE_URL = 'https://line.me/R/app/2008450856-kO68dB3w?uLand=mqM6f1&deviceId=zwt7221768448201247#~';
+
+    document.getElementById('line-cta').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(LINE_URL, '_blank');
+    });
+  </script>
+</body>
+</html>
