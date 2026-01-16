@@ -1,6 +1,9 @@
 {
   "rewrites": [
     { "source": "/lp/ad2612", "destination": "/" },
-    { "source": "/lp/ad2612/:path*", "destination": "/:path*" }
-  ]
+    { "source": "/lp/ad2612/", "destination": "/" },
+    { "source": "/lp/ad2612/:path*", "destination": "/:path*" },
+    { "source": "/lp/:path*", "destination": "/:path*" }
+  ],
+  "trailingSlash": false
 }
