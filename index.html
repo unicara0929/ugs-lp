@@ -295,9 +295,16 @@
     /* インラインCTAボタン */
     .inline-cta {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      padding: 20px 16px;
+      padding: 30px 16px;
       background: #F7FCFC;
+      gap: 8px;
+    }
+
+    .inline-cta .cta-badge {
+      margin-bottom: 4px;
     }
 
     .inline-cta-button {
@@ -305,11 +312,11 @@
       align-items: center;
       justify-content: center;
       width: 90%;
-      max-width: 350px;
-      padding: 16px 24px;
+      max-width: 380px;
+      padding: 20px 28px;
       background: linear-gradient(180deg, #06C755 0%, #05a347 100%);
       color: #fff;
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 700;
       text-decoration: none;
       border-radius: 50px;
@@ -330,8 +337,8 @@
 
     @media screen and (max-width: 480px) {
       .inline-cta-button {
-        font-size: 15px;
-        padding: 14px 20px;
+        font-size: 17px;
+        padding: 18px 24px;
       }
     }
 
@@ -342,11 +349,18 @@
 
     .cta-overlay {
       position: absolute;
-      bottom: 18%;
+      bottom: 6%;
       left: 5%;
       width: 90%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
+      gap: 6px;
+    }
+
+    .cta-overlay .cta-badge {
+      background: rgba(255, 255, 255, 0.95);
     }
 
     .cta-overlay .inline-cta-button {
@@ -368,6 +382,7 @@
 
     <!-- LINE登録ボタン1 -->
     <div class="inline-cta">
+      <div class="cta-badge"><strong>最大20万円</strong>の利益実践ガイドをもらう</div>
       <a href="#" class="inline-cta-button line-cta-link">今すぐ無料でLINE登録する</a>
     </div>
 
@@ -408,6 +423,7 @@
     <section class="section cta-overlay-section">
       <img src="9.png" alt="さらに今なら！このページからLINE登録&面談参加で入会金11万円OFF" loading="lazy">
       <div class="cta-overlay">
+        <div class="cta-badge"><strong>最大20万円</strong>の利益実践ガイドをもらう</div>
         <a href="#" class="inline-cta-button line-cta-link">今すぐ無料でLINE登録する</a>
       </div>
     </section>
