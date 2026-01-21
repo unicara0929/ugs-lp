@@ -6,9 +6,9 @@
     { "source": "/lp/ad26121", "destination": "/UGSLP1/index.html" },
     { "source": "/lp/ad26121/", "destination": "/UGSLP1/index.html" },
     { "source": "/lp/ad26121/:path*", "destination": "/UGSLP1/:path*" },
-    { "source": "/lp/ad26123", "destination": "/UGSLP2/index.html" },
-    { "source": "/lp/ad26123/", "destination": "/UGSLP2/index.html" },
-    { "source": "/lp/ad26123/:path*", "destination": "/UGSLP2/:path*" }
+    { "source": "/lp/ad847", "destination": "/UGSLP2/index.html" },
+    { "source": "/lp/ad847/", "destination": "/UGSLP2/index.html" },
+    { "source": "/lp/ad847/:path*", "destination": "/UGSLP2/:path*" }
   ],
   "trailingSlash": false
 }
